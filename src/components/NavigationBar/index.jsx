@@ -5,6 +5,7 @@ import { Switch, Route, Link } from 'react-router-dom';
 import Home from '../Home';
 import Projects from '../Projects';
 import Contact from '../Contact';
+import NotFound from '../NotFound';
 
 import './styles.css';
 import logo from './img/twitter-icon.svg';
@@ -17,8 +18,8 @@ export default function NavigationBar() {
                     <Navbar.Brand as={Link} to="/portfolio/" className="ml-5">Home</Navbar.Brand>
                     <Nav className="">
                         {/* <Nav.Link as={Link} to="/">Home</Nav.Link> */}
-                        <Nav.Link as={Link} to="/projects/">Projects</Nav.Link>
-                        <Nav.Link as={Link} to="/contact/">Contact</Nav.Link>
+                        <Nav.Link as={Link} to="/portfolio/projects/">Projects</Nav.Link>
+                        <Nav.Link as={Link} to="/portfolio/contact/">Contact</Nav.Link>
                     </Nav>
                     <a 
                         href="https://twitter.com/ElvisGastelum"
@@ -32,9 +33,7 @@ export default function NavigationBar() {
                     <Route exact path='/portfolio/' component={Home} />
                     <Route exact path='/portfolio/projects/' component={Projects} />
                     <Route exact path='/portfolio/contact/' component={Contact} />
-                    <Route render={function () {
-                        return <p>Not found</p>
-                    }} />
+                    <Route render={NotFound} />
                 </Switch>
             </div>
         </div>
