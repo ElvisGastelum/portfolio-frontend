@@ -4,3 +4,8 @@ footer .credits {
 	font-size: 14px;
 	color: #c13584;
 }
+
+footer .github-logo {
+	height: 3vh;
+	margin-right: 0.2vw;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './img/GitHub-Mark.svg';
+import logo from './img/github-logo.svg';
 import './styles.css';
 
 export default function Header() {
