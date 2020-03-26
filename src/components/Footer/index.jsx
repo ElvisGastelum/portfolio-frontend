@@ -11,7 +11,7 @@ export default function Footer() {
             <footer>
                 <div className="credits">
                     <p>
-                        Year 2020 <Link to="/">Portfolio</Link> - <a href={twitterUri}>Elvis Gastelum</a>
+                        Year 2020 <Link to="/portfolio/">Portfolio</Link> - <a href={twitterUri}>Elvis Gastelum</a>
                     </p>
                 </div>
             </footer>
