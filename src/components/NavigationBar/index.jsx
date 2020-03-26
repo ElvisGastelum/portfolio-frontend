@@ -14,11 +14,11 @@ export default function NavigationBar() {
         <div>
             <div>
                 <Navbar sticky="top" bg="dark" variant="dark" className="App-navbar">
-                    <Navbar.Brand as={Link} to="/" className="ml-5">Home</Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/portfolio/" className="ml-5">Home</Navbar.Brand>
                     <Nav className="">
                         {/* <Nav.Link as={Link} to="/">Home</Nav.Link> */}
-                        <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
-                        <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+                        <Nav.Link as={Link} to="/projects/">Projects</Nav.Link>
+                        <Nav.Link as={Link} to="/contact/">Contact</Nav.Link>
                     </Nav>
                     <a 
                         href="https://twitter.com/ElvisGastelum"
@@ -29,9 +29,9 @@ export default function NavigationBar() {
             </div>
             <div>
                 <Switch>
-                    <Route exact path='/' component={Home} />
-                    <Route exact path='/projects' component={Projects} />
-                    <Route exact path='/contact' component={Contact} />
+                    <Route exact path='/portfolio/' component={Home} />
+                    <Route exact path='/projects/' component={Projects} />
+                    <Route exact path='/contact/' component={Contact} />
                     <Route render={function () {
                         return <p>Not found</p>
                     }} />
