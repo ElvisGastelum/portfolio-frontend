@@ -9,7 +9,7 @@ const twitterUri = "https://twitter.com/ElvisGastelum";
 
 export default function Footer() {
     return (
-        <div className="App-footer">
+        <div>
             <footer>
                 <div className="credits">
                     <p>
@@ -17,7 +17,7 @@ export default function Footer() {
                     </p>
                     <img src={GitHubLogo} alt="github-logo" className="github-logo"/>
                     <a href="https://github.com/ElvisGastelum/portfolio">
-                        Repository
+                        https://github.com/ElvisGastelum/portfolio
                     </a>
                 </div>
             </footer>
