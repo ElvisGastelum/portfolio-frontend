@@ -8,9 +8,9 @@ export default function Home() {
       className="h-100 text-center d-flex"
     >
       <div className="justify-content-center d-flex flex-column flex-fill">
-        <div>
+        <div className="App-logo">
           <a href="https://github.com/ElvisGastelum">
-            <img src={logo} alt="logo" className="App-logo" />
+            <img src={logo} alt="logo" />
           </a>
         </div>
         <div>
