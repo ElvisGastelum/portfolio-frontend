@@ -7,7 +7,7 @@ import './styles.css';
 export default function Projects() {
   return (
     <Layout
-      header="Projects"
+      header="Projects Page"
       nav="Navigation"
       section="Section"
       article="Article"

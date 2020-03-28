@@ -7,7 +7,7 @@ import './styles.css';
 export default function Contact() {
   return (
     <Layout
-      header="Contact"
+      header="Contact Page"
       nav="Navigation"
       section="Section"
       article="Article"
