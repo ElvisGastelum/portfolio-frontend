@@ -12,6 +12,7 @@ export default function NavigationBar() {
           <Navbar.Brand as={Link} to="/portfolio/" className="ml-5">Home</Navbar.Brand>
           <Nav className="">
             <Nav.Link as={Link} to="/portfolio/projects/">Projects</Nav.Link>
+            <Nav.Link as={Link} to="/portfolio/blog/">Blog</Nav.Link>
             <Nav.Link as={Link} to="/portfolio/contact/">Contact</Nav.Link>
           </Nav>
           <a

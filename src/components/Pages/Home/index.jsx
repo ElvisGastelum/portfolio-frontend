@@ -1,29 +1,32 @@
 import React from 'react';
+
+import Logo from './Logo/Logo';
+import DescriptionWrapper from './DescriptionWrapper';
+import Title from './DescriptionTitle';
+import Text from './DescriptionText';
+
 import logo from './img/github-logo.svg';
-import './styles.css';
 
 export default function Home() {
   return (
-    <header
-      className="h-100 text-center d-flex"
-    >
-      <div className="justify-content-center d-flex flex-column flex-fill">
-        <div className="App-logo">
-          <a href="https://github.com/ElvisGastelum">
-            <img src={logo} alt="logo" />
-          </a>
-        </div>
-        <div>
-          <p>
-            Elvis Gastelum - <code>Web developer</code>
-          </p>
-          <br />
-          <p>
-            I can help you solve any problem
-                </p>
-          <p>NodeJS, React, C#</p>
-        </div>
-      </div>
-    </header>
+    <div className="justify-content-center d-flex flex-column flex-fill h-100 text-center">
+      <Logo 
+        source={logo}
+        link="https://github.com/ElvisGastelum"
+        
+      />
+      <DescriptionWrapper>
+        <Title>
+          Elvis Gastelum - <code>Web developer</code>
+        </Title>
+        <br />
+        <Text>
+          I can help you solve any problem
+        </Text>
+        <Text>
+          NodeJS, React, C#
+        </Text>
+      </DescriptionWrapper>
+    </div>
   )
 }
