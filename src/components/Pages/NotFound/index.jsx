@@ -3,8 +3,9 @@ import React from 'react';
 import './styles.css';
 
 
-export default function NotFound() {
-    return (
-        <p className="App-url-not-found">404 - Not found</p>
-    )
-}
+const NotFound = () =>
+  <div className="h-100 justify-content-center d-flex flex-column">
+    <p className="App-url-not-found text-center ">404 - Not found</p>
+  </div>
+
+export default NotFound
