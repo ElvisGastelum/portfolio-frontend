@@ -5,7 +5,7 @@ import "./styles.css";
 const API =
   "https://pixabay.com/api/?key=15834767-e0333fd2846cb4e6218951e0a&per_page=8&q=";
 
-export default class GalleryImages extends Component {
+  export default class GalleryImages extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -15,7 +15,7 @@ export default class GalleryImages extends Component {
   }
 
   fetchImages = () => {
-    const URL = API + this.state.text.split(" ").join("+");
+    const URL = API + encodeURIComponent(this.state.text);
 
     fetch(URL)
       .then(response => response.json())
