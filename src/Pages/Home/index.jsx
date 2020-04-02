@@ -1,32 +1,20 @@
-import React from 'react';
+import React from "react";
 
-import Logo from './Logo/Logo';
-import DescriptionWrapper from './DescriptionWrapper';
-import Title from './DescriptionTitle';
-import Text from './DescriptionText';
-
-import logo from './img/github-logo.svg';
+import Logo from "./Logo/Logo";
+import logo from "./img/github-logo.svg";
 
 export default function Home() {
   return (
     <div className="justify-content-center d-flex flex-column flex-fill h-100 text-center">
-      <Logo 
-        source={logo}
-        link="https://github.com/ElvisGastelum"
-        
-      />
-      <DescriptionWrapper>
-        <Title>
+      <Logo source={logo} link="https://github.com/ElvisGastelum" />
+      <div>
+        <h3>
           Elvis Gastelum - <code>Web developer</code>
-        </Title>
+        </h3>
         <br />
-        <Text>
-          I can help you solve any problem
-        </Text>
-        <Text>
-          NodeJS, React, C#
-        </Text>
-      </DescriptionWrapper>
+        <p>I can help you solve any problem</p>
+        <p>NodeJS, React, C#</p>
+      </div>
     </div>
-  )
+  );
 }
