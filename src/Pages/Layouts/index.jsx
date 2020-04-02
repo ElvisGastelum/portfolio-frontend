@@ -1,16 +1,16 @@
 import React from 'react'
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 import NavigationBar from '../../components/NavigationBar';
 import Footer from '../../components/Footer';
 
 const Layout = ({ children, className }) =>
-  <BrowserRouter>
+  <HashRouter>
     <div className={className}>
       <NavigationBar />
         {children}
       <Footer />
     </div>
-  </BrowserRouter>
+  </HashRouter>
 
 export default Layout

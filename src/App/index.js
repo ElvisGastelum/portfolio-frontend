@@ -11,10 +11,10 @@ export default function App() {
     <Layout className="h-100 d-flex flex-column">
       <Switch>
         <Route exact path='/gallery' component={GalleryImages} />
-        <Route exact path='/portfolio/' component={Home} />
-        <Route exact path='/portfolio/projects/' component={Projects} />
-        <Route exact path='/portfolio/blog/' component={Blog} />
-        <Route exact path='/portfolio/contact/' component={Contact} />
+        <Route exact path='/' component={Home} />
+        <Route exact path='/projects' component={Projects} />
+        <Route exact path='/blog' component={Blog} />
+        <Route exact path='/contact' component={Contact} />
         <Route render={NotFound} />
       </Switch>
     </Layout>
