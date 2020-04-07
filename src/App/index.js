@@ -1,22 +1,26 @@
-import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import React from "react";
+import { Switch, Route, HashRouter } from "react-router-dom";
 
-import { Projects, Contact, NotFound, Home, Layout, Blog } from '../Pages';
+import { Projects, Contact, NotFound, Home, Blog } from "../Pages";
+import NavigationBar from '../components/NavigationBar';
+import Footer from '../components/Footer';
 
-import GalleryImages from '../components/GalleryImages';
-
+import GalleryImages from "../components/GalleryImages";
 
 export default function App() {
   return (
-    <Layout className="h-100 d-flex flex-column">
-      <Switch>
-        <Route exact path='/gallery' component={GalleryImages} />
-        <Route exact path='/' component={Home} />
-        <Route exact path='/projects' component={Projects} />
-        <Route exact path='/blog' component={Blog} />
-        <Route exact path='/contact' component={Contact} />
-        <Route render={NotFound} />
-      </Switch>
-    </Layout>
+    <HashRouter>
+      <div className="h-100 d-flex flex-column">
+        <NavigationBar />
+        <Switch>
+          <Route exact path="/gallery" component={GalleryImages} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/projects" component={Projects} />
+          <Route exact path="/blog" component={Blog} />
+          <Route exact path="/contact" component={Contact} />
+          <Route render={NotFound} />
+        </Switch>
+      </div>
+    </HashRouter>
   );
 }
