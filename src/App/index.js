@@ -3,7 +3,6 @@ import { Switch, Route, HashRouter } from "react-router-dom";
 
 import { Projects, Contact, NotFound, Home, Blog } from "../Pages";
 import NavigationBar from '../components/NavigationBar';
-import Footer from '../components/Footer';
 
 import GalleryImages from "../components/GalleryImages";
 
