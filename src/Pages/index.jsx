@@ -1,9 +1,9 @@
-import Projects from './Projects';
-import Home from './Home';
-import NotFound from './NotFound';
-import Layout from './Layouts';
-import Blog from './Blog';
-import Contact from './Contact';
+import Projects from './projects';
+import Home from './home';
+import NotFound from './not-found';
+import Layout from './layouts';
+import Blog from './blog';
+import Contact from './contact';
 
 export {
   Projects,

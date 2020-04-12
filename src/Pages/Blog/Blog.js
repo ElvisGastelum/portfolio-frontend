@@ -2,8 +2,8 @@ import React, { Component } from "react";
 
 import { getArticles } from "../../services";
 
-import ArticleResumed from "../../components/ArticleResumed";
-import Loading from '../../components/Loading';
+import ArticleResumed from "../../components/article-resumed";
+import Loading from '../../components/loading';
 
 export default class Blog extends Component {
   constructor(props) {
