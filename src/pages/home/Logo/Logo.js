@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { appLogo } from './Logo.module.css';
+import { appLogo } from './logo.module.css';
 
 export default function Logo({ source, link }) {
   return (
