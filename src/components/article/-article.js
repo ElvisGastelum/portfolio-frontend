@@ -11,6 +11,12 @@ const articles = [
   { title: "Third Recomended Article", description: "Prev description 3" },
 ];
 
+const hashCode = function(s){
+  return s.split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0);              
+}
+
+console.log(articles.map(a => hashCode(a)))
+
 export default class Article extends Component {
   render() {
     return (
