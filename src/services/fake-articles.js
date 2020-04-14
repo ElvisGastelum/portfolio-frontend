@@ -1,4 +1,4 @@
-import { hashCode } from "./index";
+import { hashCode } from '../libs';
 
 const BASE_URL =
   process.env.REACT_APP_BASE_URL_ARTICLES_LIST || "https://newsapi.org/v2";
