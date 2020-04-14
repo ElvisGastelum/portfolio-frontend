@@ -1,1 +1,1 @@
-export { getArticles } from './fakeArticles';
+export { getArticles } from './fake-articles';
