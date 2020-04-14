@@ -1,11 +1,13 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class ArticleResumed extends Component {
   render() {
-    const { title, description, urlToImage, author } = this.props.article;
+    const { title, description, urlToImage, author, id } = this.props.article;
     return (
       <div className="card bg-dark mt-3" {...this.props}>
-        <a
+        <Link
+          to={`/article/${id}`}
           href="#/blog"
           className="text-reset text-decoration-none d-flex flex-row justify-content-center card-body font-weight-light"
         >
@@ -17,7 +19,7 @@ export default class ArticleResumed extends Component {
               Author: {author ? author : "Anonymous"}
             </p>
           </div>
-        </a>
+        </Link>
       </div>
     );
   }

@@ -16,9 +16,9 @@ export default function App() {
           <Route exact path="/gallery" component={GalleryImages} />
           <Route exact path="/" component={Home} />
           <Route exact path="/projects" component={Projects} />
-          <Route exact path="/blog" component={Blog} />
+          <Route path="/blog" component={Blog} />
           <Route exact path="/contact" component={Contact} />
-          <Route exact path="/article/:hash" component={Article} />
+          <Route path="/article/:id" component={Article} />
           <Route render={NotFound} />
         </Switch>
       </div>
