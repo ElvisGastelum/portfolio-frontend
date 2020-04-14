@@ -1,9 +1,28 @@
-const BASE_URL_ARTICLES_LIST = process.env.REACT_APP_BASE_URL_ARTICLES_LIST || 'https://newsapi.org/v2';
+import { hashCode } from "./index";
+
+const BASE_URL =
+  process.env.REACT_APP_BASE_URL_ARTICLES_LIST || "https://newsapi.org/v2";
+const API_KEY =
+  process.env.REACT_APP_BASE_API_KEY || "6000bc1aeed64d458affdc47fb7ce2d5";
+
+const addId = (articles) => {
+  articles.forEach((a) => {
+    a.id = hashCode(a.publishedAt);
+  });
+};
 
 export const getArticles = async ({ country = "mx" }) => {
-  const url = `${BASE_URL_ARTICLES_LIST}/top-headlines?country=${country}&apiKey=6000bc1aeed64d458affdc47fb7ce2d5`;
+  const url = `
+    ${BASE_URL}/top-headlines?country=${country}&apiKey=${API_KEY}
+  `;
 
-  return await fetch(url)
-    .then((res) => res.json())
-    .then((res) => res.articles);
+  const response = await fetch(url);
+
+  const json = await response.json();
+
+  const { articles } = json;
+
+  addId(articles);
+
+  return articles;
 };

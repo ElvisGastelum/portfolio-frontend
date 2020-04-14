@@ -4,6 +4,7 @@ import NotFound from './not-found';
 import Layout from './layouts';
 import Blog from './blog';
 import Contact from './contact';
+import Article from './article';
 
 export {
   Projects,
@@ -11,5 +12,6 @@ export {
   Home,
   NotFound,
   Layout,
-  Blog
+  Blog,
+  Article
 }

@@ -1,24 +1,15 @@
 import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
 
-import ArticleDetails from "../ArticleDetails";
-import PrevArticle from "../PrevArticle";
+import { AppContext } from "../../app-context";
 
-import image from './img/img-300x200.jpg';
+import ArticleDetails from "../../components/article-details";
+import PrevArticle from "../../components/prev-article";
 
-const articles = [
-  { title: "First Recomended Article", description: "Prev description 1" },
-  { title: "Second Recomended Article", description: "Prev description 2" },
-  { title: "Third Recomended Article", description: "Prev description 3" },
-];
-
-const hashCode = function(s){
-  return s.split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0);              
-}
-
-console.log(articles.map(a => hashCode(a)))
-
-export default class Article extends Component {
+class Article extends Component {
+  static contextType = AppContext;
   render() {
+    const articles = this.context;
     return (
       <div className="h-100 pl-4 pr-4">
         <div className="title text-center pt-3 pb-1">
@@ -28,7 +19,11 @@ export default class Article extends Component {
           <div className="w-75 m-2">
             <ArticleDetails subtitle="This is a incredible subtitle!">
               <div className="pb-3">
-                <img src={image} alt="Lorem Pic" className="img-thumbnail mx-auto d-block"/>
+                <img
+                  src={undefined}
+                  alt="Lorem Pic"
+                  className="img-thumbnail mx-auto d-block"
+                />
               </div>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel
@@ -102,11 +97,11 @@ export default class Article extends Component {
           </div>
           <div className="w-25">
             <aside>
-              {articles.map((article, index) => (
+              {articles.map(({id, title, description}) => (
                 <PrevArticle
-                  key={index}
-                  title={article.title}
-                  description={article.description}
+                  key={id}
+                  title={title}
+                  description={description}
                 />
               ))}
             </aside>
@@ -116,3 +111,5 @@ export default class Article extends Component {
     );
   }
 }
+
+export default withRouter(Article);

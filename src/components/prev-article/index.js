@@ -1,3 +1,3 @@
-import PrevArticle from './PrevArticle';
+import PrevArticle from './prev-article';
 
 export default PrevArticle;

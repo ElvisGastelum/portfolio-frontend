@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 
 export default class ArticleDetails extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const { children, subtitle } = this.props;
     return (

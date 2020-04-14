@@ -1,3 +1,3 @@
-import ArticleResumed from './ArticleResumed';
+import ArticleResumed from './article-resumed';
 
 export default ArticleResumed;

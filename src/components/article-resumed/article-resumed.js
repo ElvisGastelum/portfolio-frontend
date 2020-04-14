@@ -4,7 +4,7 @@ export default class ArticleResumed extends Component {
   render() {
     const { title, description, urlToImage, author } = this.props.article;
     return (
-      <div className="card bg-dark mt-3">
+      <div className="card bg-dark mt-3" {...this.props}>
         <a
           href="#/blog"
           className="text-reset text-decoration-none d-flex flex-row justify-content-center card-body font-weight-light"
