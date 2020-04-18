@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { animateScroll as scroll} from 'react-scroll';
 
 import { AppContext } from "../../app-context";
 
@@ -14,6 +15,10 @@ class Article extends Component {
       return article.id === parseInt(id);
     });
   };
+
+  componentDidMount(){
+    scroll.scrollToTop();
+  }
 
   render() {
     const { articles, isLoading } = this.context;
