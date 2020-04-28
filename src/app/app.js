@@ -7,6 +7,8 @@ import NavigationBar from "../components/navigation-bar";
 
 import GalleryImages from "../components/gallery-images";
 
+import './app.css';
+
 export default function App() {
   return (
     <AppContextProvider>

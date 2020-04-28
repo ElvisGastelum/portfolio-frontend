@@ -15,7 +15,7 @@ export default function NavigationBar() {
         sticky="top"
         bg={theme}
         variant={theme}
-        className="App-navbar px-5"
+        className="app-navbar px-5"
       >
         <Navbar.Brand as={Link} to="/" className="m-0">
           Home
@@ -24,12 +24,12 @@ export default function NavigationBar() {
           <Nav.Link as={Link} to="/projects">
             Projects
           </Nav.Link>
-          <Nav.Link as={Link} to="/blog">
+          {/* <Nav.Link as={Link} to="/blog">
             Blog
           </Nav.Link>
           <Nav.Link as={Link} to="/contact">
             Contact
-          </Nav.Link>
+          </Nav.Link> */}
         </Nav>
         <a href="https://twitter.com/ElvisGastelum">
           <img src={logo} alt="logo" />

@@ -5,6 +5,8 @@ import { AppContext } from "../../app-context";
 import ArticleResumed from "../../components/article-resumed";
 import Loading from "../../components/loading";
 
+import './blog.css';
+
 export default class Blog extends Component {
   static contextType = AppContext;
 
