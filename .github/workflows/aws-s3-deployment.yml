@@ -1,4 +1,4 @@
-name: Aws s3 Deployment
+name: Aws S3 Deployment
 
 on:
   push:
