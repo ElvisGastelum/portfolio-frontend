@@ -13,8 +13,7 @@ export default function Home(props) {
           Elvis Gastelum - <code>Web developer</code>
         </h3>
         <br />
-        <p>I can help you solve any problem</p>
-        <p>NodeJS, React, C#</p>
+        <p>NodeJS, React, Docker, Linux, AWS, Terraform</p>
       </div>
     </div>
   );
