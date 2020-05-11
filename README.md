@@ -1,6 +1,8 @@
 # Porfolio project
 
 ## In development
+### Requirements
+- You need to have installed docker
 
 ### Build
 ```
