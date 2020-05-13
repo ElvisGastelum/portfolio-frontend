@@ -1,5 +1,5 @@
 header{
-  height: 110vh;
+  height: 113vh;
 }
 
 .container{
@@ -9,7 +9,7 @@ header{
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-clip-path: polygon(600% 0, 0 0, 0 98%);
-  clip-path: polygon(600% 0, 0 0, 0 98%);
+  clip-path: polygon(900% 0,0 0, 0 0, 0 100%);
   z-index: 10;
   height: 100%;
 }
@@ -43,7 +43,7 @@ header{
   justify-content: center;
   text-decoration: none;
   display: flex;
-  top: 75vh;
+  top: 76vh;
 
 }
 
