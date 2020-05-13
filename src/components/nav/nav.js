@@ -12,7 +12,7 @@ export default function Nav() {
         </a>
       </div>
       <div className={styles["navigation-links"]}>
-        <a className={styles["navigation-link"]} href="cv.pdf">
+        <a className={styles["navigation-link"]} href="https://docs.google.com/document/d/1unZEQPnvFd2LHnUx8ICC2kbTIy-uAmj9YF56kEAsPQA/edit?usp=sharing">
           <div className={styles["navigation-link-icon"]}>
             <i className="fas fa-file-contract"></i>
           </div>
