@@ -1,0 +1,20 @@
+.footer{
+  background-color: rgb(var(--color-gray-dark));
+  color: rgb(var(--color-secondary));
+  height: 10vh;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a{
+  text-decoration: none;
+  color: rgb(var(--color-blue));
+}
+
+.footer a:hover{
+  text-decoration: none;
+}

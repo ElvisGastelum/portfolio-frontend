@@ -8,7 +8,7 @@ header{
   background-position: 30%;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
+  -webkit-clip-path: polygon(600% 0, 0 0, 0 98%);
   clip-path: polygon(600% 0, 0 0, 0 98%);
   z-index: 10;
   height: 100%;
