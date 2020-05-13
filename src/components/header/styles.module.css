@@ -27,7 +27,7 @@ header{
   color: rgb(var(--color-secondary));
   font-weight:bold;
   letter-spacing: 0.05em;
-  font-size: 2.8em;
+  font-size: 5em;
 }
 
 .header-subtitle{
@@ -35,12 +35,12 @@ header{
   color: rgb(var(--color-black));
   font-weight: 300;
   text-align: end;
-  font-size: 2.2em;
+  font-size: 4em;
 }
 
 .buttons{
   position: relative;
-  top: 56vh;
+  top: 58vh;
   left: 33vw;
   text-decoration: none;
   width: fit-content;
@@ -49,11 +49,11 @@ header{
 .button{
   text-decoration: none;
   margin: 0 1rem;
-  padding: 0.5rem 1.5rem;
+  padding: 1rem 3rem;
   background-color: rgb(var(--color-secondary));
   color: rgb(var(--color-gray));
-  font-size: 1.5em;
-  border-radius: 30px;
+  font-size: 2.2em;
+  border-radius: 60px;
   display: inline-flex;
 }
 
