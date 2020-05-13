@@ -7,7 +7,7 @@ export default function Contact() {
     <>
     <span id="contact"></span>
     <section className={styles["contact"]}>
-      <i className={styles["contact-icon"] + " fas fa-address-card"}></i>
+      <i className={styles["contact-icon"] + " fas fa-address-book"}></i>
       <div className={styles["contact-text"]}>
         <h3 className={styles["contact-text-title"]}>Contact</h3>
         <hr className={styles["contact-text-line"]} />
