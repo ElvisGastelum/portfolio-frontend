@@ -1,13 +1,13 @@
 .navigation{
   background-color: rgba(var(--color-primary), 0.8);
-  height: 5rem;
+  height: 4rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   position: fixed;
   width: 100vw;
   z-index: 20;
-  font-size: 2em;
+  font-size: 1.4em;
 }
 
 .navigation-logo{
@@ -47,6 +47,6 @@
   border-radius: 30px;
 }
 
-.navigation-link:hover *:nth-child(n){
+.navigation-link:hover *{
   color: rgb(var(--color-black));
 }
