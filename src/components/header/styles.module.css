@@ -15,9 +15,9 @@ header{
 }
 
 .header-text{
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
-  position: relative;
+  position: absolute;
   top: 34vh;
   left: 8vw;
 }
@@ -27,7 +27,7 @@ header{
   color: rgb(var(--color-secondary));
   font-weight:bold;
   letter-spacing: 0.05em;
-  font-size: 5em;
+  font-size: 4em;
 }
 
 .header-subtitle{
@@ -35,24 +35,25 @@ header{
   color: rgb(var(--color-black));
   font-weight: 300;
   text-align: end;
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .buttons{
   position: relative;
-  top: 58vh;
-  left: 33vw;
+  justify-content: center;
   text-decoration: none;
-  width: fit-content;
+  display: flex;
+  top: 75vh;
+
 }
 
 .button{
   text-decoration: none;
   margin: 0 1rem;
-  padding: 1rem 3rem;
+  padding: 0.5rem 2rem;
   background-color: rgb(var(--color-secondary));
   color: rgb(var(--color-gray));
-  font-size: 2.2em;
+  font-size: 1.7em;
   border-radius: 60px;
   display: inline-flex;
 }
