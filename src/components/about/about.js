@@ -8,7 +8,7 @@ export default function About() {
     <span id="about"></span>
     <section className={styles["about"]}>
       <div className={styles["about-text"]}>
-        <h3 className={styles["about-text-title"]}>About</h3>
+        <h2 className={styles["about-text-title"]}>About</h2>
         <hr className={styles["about-text-line"]} />
         <p className={styles["about-text-content"]}>
           I can <b>create web pages</b> with the latest generation framework react,
