@@ -1,0 +1,13 @@
+<svg id="logo" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Ellipse_2" data-name="Ellipse 2" fill="#6c7173" stroke="#f2f1df" stroke-width="3">
+    <circle cx="16" cy="16" r="16" stroke="none"/>
+    <circle cx="16" cy="16" r="14.5" fill="none"/>
+  </g>
+  <g id="forms" transform="translate(9.956 8.533)">
+    <path id="Polygon_3" data-name="Polygon 3" d="M5.689,0l5.689,7.822H0Z" transform="translate(0 0)" fill="#f2dea2"/>
+    <path id="Path_21" data-name="Path 21" d="M4.879,0,9.757,9.033H0L3.161,3.181Z" transform="translate(1.894 2.322)" fill="#f2f1df"/>
+    <path id="Polygon_2" data-name="Polygon 2" d="M1.422,0,2.844,2.844H0Z" transform="translate(3.556 3.556)" fill="#a4a698"/>
+  </g>
+  <text id="_" data-name="&lt;" transform="translate(6.844 19.978)" fill="#f2dea2" font-size="16" font-family="Roboto-Regular, Roboto" letter-spacing="0.026em"><tspan x="-4.066" y="0">&lt;</tspan></text>
+  <text id="_2" data-name="&gt;" transform="translate(25.044 19.978)" fill="#f2dea2" font-size="16" font-family="Roboto-Regular, Roboto" letter-spacing="0.026em"><tspan x="-4.18" y="0">&gt;</tspan></text>
+</svg>
