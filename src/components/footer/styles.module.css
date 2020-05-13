@@ -1,9 +1,9 @@
 .footer{
   background-color: rgb(var(--color-gray-dark));
   color: rgb(var(--color-secondary));
-  height: 10vh;
+  height: 7vh;
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 300;
   display: flex;
   justify-content: center;
