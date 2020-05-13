@@ -6,7 +6,7 @@
   -webkit-clip-path: polygon(0 0, 100% 23%, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 23%, 100% 100%, 0 100%);
   background-color: rgb(var(--color-primary));
-  height: 55vh;
+  height: 50vh;
 }
 
 .contact-text{
