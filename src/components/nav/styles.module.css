@@ -1,28 +1,34 @@
 .navigation{
   background-color: rgba(var(--color-primary), 0.8);
-  height: 3rem;
+  height: 5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   position: fixed;
   width: 100vw;
   z-index: 20;
+  font-size: 2em;
 }
 
 .navigation-logo{
-  margin-left: 1rem;
+  margin-left: 2rem;
+}
+
+.navigation-logo img{
+  width: 2em;
+  height: auto;
 }
 
 .navigation-links{
   display: flex;
   margin-left: auto;
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 
 .navigation-link{
   display: flex;
   margin: .5rem 0.5rem;
-  padding: 0.2rem 0.5rem;
+  padding: 0.3rem 1.2rem;
 }
 
 .navigation-link-icon i{
