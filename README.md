@@ -1,4 +1,4 @@
-# Porfolio project
+# Portfolio project
 
 ## In development
 ### Requirements
