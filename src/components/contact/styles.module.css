@@ -1,0 +1,43 @@
+
+.contact{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  -webkit-clip-path: polygon(0 0, 100% 23%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 23%, 100% 100%, 0 100%);
+  background-color: rgb(var(--color-primary));
+  height: 65vh;
+}
+
+.contact-text{
+  width: 80vw;
+  text-align: center;
+}
+
+.contact-text-title{
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.contact-text-line{
+  border-width: 2px;
+  background-color: rgb(var(--color-gray));
+  width: 75%;
+}
+
+.contact-text-content{
+  font-size: 1.5em;
+}
+
+.contact-text-content a{
+  text-decoration: none;
+  color: rgb(var(--color-blue));
+}
+
+.contact-text-content a:hover{
+  text-decoration: none;
+}
+
+.contact-icon{
+  font-size: 7em;
+}

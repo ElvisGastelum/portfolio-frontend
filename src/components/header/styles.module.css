@@ -1,0 +1,71 @@
+header{
+  height: 110vh;
+}
+
+.container{
+  background-image: url(./img/background.jpg);
+  background-color: rgb(var(--color-secondary));
+  background-position: 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-clip-path: polygon(600% 0, 0 0, 0 98%);
+  clip-path: polygon(600% 0, 0 0, 0 98%);
+  z-index: 10;
+  height: 100%;
+}
+
+.header-text{
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  top: 34vh;
+  left: 8vw;
+}
+
+.header-title{
+  font-style: bold;
+  color: rgb(var(--color-secondary));
+  font-weight:bold;
+  letter-spacing: 0.05em;
+  font-size: 2.8em;
+}
+
+.header-subtitle{
+  position: relative;
+  color: rgb(var(--color-black));
+  font-weight: 300;
+  text-align: end;
+  font-size: 2.2em;
+}
+
+.buttons{
+  position: relative;
+  top: 56vh;
+  left: 33vw;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.button{
+  text-decoration: none;
+  margin: 0 1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(var(--color-secondary));
+  color: rgb(var(--color-gray));
+  font-size: 1.5em;
+  border-radius: 30px;
+  display: inline-flex;
+}
+
+.button:hover{
+  text-decoration: none;
+  color: rgb(var(--color-black));
+}
+
+.button *{
+  margin: 0 0.2em;
+}
+
+.button-icon{
+  font-size: 1.5em;
+}

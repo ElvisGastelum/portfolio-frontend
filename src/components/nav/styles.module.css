@@ -1,0 +1,46 @@
+.navigation{
+  background-color: rgba(var(--color-primary), 0.8);
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  z-index: 20;
+}
+
+.navigation-logo{
+  margin-left: 1rem;
+}
+
+.navigation-links{
+  display: flex;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.navigation-link{
+  display: flex;
+  margin: .5rem 0.5rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.navigation-link-icon i{
+  max-height: 1rem;
+  color: rgb(var(--color-gray));
+  margin: 0.2rem;
+}
+
+.navigation-link-text{
+  color: rgb(var(--color-gray));
+}
+
+.navigation-link:hover{
+  text-decoration: none;
+  background-color: rgb(var(--color-secondary));
+  border-radius: 30px;
+}
+
+.navigation-link:hover *:nth-child(n){
+  color: rgb(var(--color-black));
+}

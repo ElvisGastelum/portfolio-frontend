@@ -1,1 +1,0 @@
-export { getArticles } from './fake-articles';

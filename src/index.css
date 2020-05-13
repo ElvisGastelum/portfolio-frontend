@@ -1,12 +1,26 @@
 html, body {
   height: 100%;
-  margin: 0;
-  padding: 0;
 }
 
-body{
-    background-color: #282c34;
-    color: white;
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(var(--color-gray));
+  background-color: rgb(var(--color-secondary));
+}
+
+:root{
+  --color-white: 	91, 126, 170;
+  --color-primary: 242, 222, 162;
+  --color-secondary: 242, 241, 223;
+  --color-secondary-dark:242, 241, 223;
+  --color-gray: 108, 113, 115;
+  --color-gray-dark:	36, 38, 33;
+  --color-black: 0, 0, 0;
+  --color-blue: 91, 126, 170;
 }
 
 #root{
