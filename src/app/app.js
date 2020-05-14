@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { intersectionObserver } from './intersection-observer';
+import { intersectionObserver } from '../intersection-observer';
 
 import Nav from "../components/nav";
 import Header from "../components/header";
