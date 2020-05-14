@@ -1,0 +1,1 @@
+export { intersectionObserver } from './intersection-observer';

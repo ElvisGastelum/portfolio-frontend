@@ -2,6 +2,7 @@
   background-color: rgb(var(--color-gray-dark));
   color: rgb(var(--color-secondary));
   height: 5vh;
+  min-height: 35px;
   text-align: center;
   font-size: 1.4rem;
   font-weight: 300;

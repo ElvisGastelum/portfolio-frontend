@@ -2,10 +2,10 @@ import React from "react";
 
 import styles from "./styles.module.css";
 
-export default function Header() {
+export default function Header({headerRef}) {
   return (
-    <header>
-      <div className={styles["container"]}>
+    <header ref={headerRef}>
+      <div className={styles["header-container"]}>
         <div className={styles["header-text"]}>
           <h1 className={styles["header-title"]}>ELVIS GASTELUM</h1>
           <h2 className={styles["header-subtitle"]}>Web Developer</h2>

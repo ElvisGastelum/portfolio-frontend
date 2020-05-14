@@ -1,6 +1,7 @@
 .navigation{
-  background-color: rgba(var(--color-primary), 0.8);
-  height: 4rem;
+  background-color: rgba(var(--color-primary), 1);
+  height: 7vh;
+  min-height: 3.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -8,6 +9,7 @@
   width: 100vw;
   z-index: 20;
   font-size: 1.4em;
+  transition: .2s;
 }
 
 .navigation-logo{
@@ -49,4 +51,28 @@
 
 .navigation-link:hover *{
   color: rgb(var(--color-black));
+}
+
+.transparent{
+  background-color: rgba(var(--color-primary), 0);
+}
+
+.transparent i{
+  color: rgb(var(--color-black));
+}
+
+.transparent *{
+  color: rgb(var(--color-black));
+}
+
+.transparent .navigation-link:hover{
+  background-color: rgb(var(--color-gray-dark));
+}
+
+.transparent .navigation-link:hover * {
+  color: rgb(var(--color-white));
+}
+
+.transparent .navigation-logo {
+  display: none;
 }

@@ -13,7 +13,7 @@ body {
 }
 
 :root{
-  --color-white: 	91, 126, 170;
+  --color-white: 	255, 255, 255;
   --color-primary: 242, 222, 162;
   --color-secondary: 242, 241, 223;
   --color-secondary-dark:242, 241, 223;

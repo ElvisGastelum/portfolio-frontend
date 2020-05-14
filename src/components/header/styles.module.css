@@ -2,7 +2,7 @@ header{
   height: 113vh;
 }
 
-.container{
+.header-container{
   background-image: url(./img/background.jpg);
   background-color: rgb(var(--color-secondary));
   background-position: 30%;
