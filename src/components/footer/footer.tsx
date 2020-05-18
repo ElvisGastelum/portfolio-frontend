@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./styles.module.css";
 
-export default function Footer() {
+export function Footer() {
   return (
     <footer className={styles["footer"]}>
       <span>

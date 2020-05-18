@@ -17,13 +17,15 @@
 }
 
 .about-text-line{
-  border-width: 2px;
+  border-width: 1px;
   background-color: rgb(var(--color-gray));
   width: 75%;
+  line-height: 0;
 }
 
 .about-text-content{
   font-size: 1.8rem;
+  line-height: 1.3;
 }
 
 

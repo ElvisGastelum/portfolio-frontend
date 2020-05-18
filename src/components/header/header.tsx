@@ -1,8 +1,13 @@
-import React from "react";
+import React, { RefObject } from "react";
 
 import styles from "./styles.module.css";
 
-export default function Header({headerRef}) {
+interface HeaderProps {
+  headerRef?: RefObject<HTMLElement>
+}
+
+export function Header({ headerRef }: HeaderProps): JSX.Element {
+
   return (
     <header ref={headerRef}>
       <div className={styles["header-container"]}>

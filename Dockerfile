@@ -4,12 +4,14 @@ ENV PATH /usr/src/app/node_modules/.bin:$PATH
 
 WORKDIR /usr/src/app
 
-COPY package*.json ./
+COPY package.json .
 
-RUN npm install
+COPY yarn.lock  .
+
+RUN yarn install
 
 COPY ./public ./public
 
 COPY ./src ./src
 
-CMD [ "npm", "start" ]
+CMD [ "yarn", "start" ]

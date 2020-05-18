@@ -21,13 +21,15 @@
 }
 
 .contact-text-line{
-  border-width: 2px;
+  border-width: 1px;
   background-color: rgb(var(--color-gray));
   width: 75%;
+  line-height: 0;
 }
 
 .contact-text-content{
   font-size: 1.8rem;
+  line-height: 1.3;
 }
 
 .contact-text-content a{
@@ -37,6 +39,7 @@
 
 .contact-text-content a:hover{
   text-decoration: none;
+  color: rgb(var(--color-blue-dark));
 }
 
 .contact-icon{

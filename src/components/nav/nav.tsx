@@ -1,10 +1,13 @@
-import React from "react";
+import React, { RefObject } from "react";
 
 import "./styles.css";
 import logo from "./img/logo.svg";
 
-export default function Nav({navRef}) {
-  
+interface NavProps {
+  navRef?: RefObject<HTMLElement>
+}
+
+export function Nav({navRef}: NavProps): JSX.Element {
 
   return (
     <nav className="navigation transparent" ref={navRef}>

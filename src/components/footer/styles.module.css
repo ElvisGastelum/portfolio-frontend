@@ -18,6 +18,7 @@
 
 .footer a:hover{
   text-decoration: none;
+  color: rgb(var(--color-blue-dark));
 }
 
 .footer a *{

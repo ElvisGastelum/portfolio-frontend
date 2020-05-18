@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./styles.module.css";
 
-export default function About() {
+export function About() {
   return (
     <>
     <span id="about"></span>

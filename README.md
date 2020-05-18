@@ -6,7 +6,7 @@
 
 ### Build
 ```
-docker build -t elvisgastelum/portfolio:dev .
+docker build -t elvisgastelum/portfolio:typescript-dev .
 ```
 
 ### Run
@@ -18,5 +18,5 @@ docker run \
   -v /usr/src/app/node_modules \
   -p 3000:3000 \
   -e CHOKIDAR_USEPOLLING=true \
-  elvisgastelum/portfolio:dev
+  elvisgastelum/portfolio:typescript-dev
 ```
