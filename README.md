@@ -18,5 +18,5 @@ docker run \
   -v /usr/src/app/node_modules \
   -p 3000:3000 \
   -e CHOKIDAR_USEPOLLING=true \
-  elvisgastelum/portfolio:typescript-dev
+  elvisgastelum/portfolio:dev
 ```
