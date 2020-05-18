@@ -8,6 +8,7 @@ import { About } from "../components/about";
 import { Contact } from "../components/contact";
 import { Footer } from "../components/footer";
 
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 
 export class App extends Component {

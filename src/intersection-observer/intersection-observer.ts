@@ -1,4 +1,9 @@
-export function intersectionObserver(element: HTMLElement | null, section: HTMLElement | null, classToEdit: string, options: object) {
+export function intersectionObserver(
+  element: HTMLElement | null,
+  section: HTMLElement | null,
+  classToEdit: string,
+  options?: IntersectionObserverInit | undefined
+): void {
   const observer = new IntersectionObserver(function (entries) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
