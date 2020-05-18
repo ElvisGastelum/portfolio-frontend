@@ -3,6 +3,7 @@
 ## In development
 ### Requirements
 - You need to have installed docker
+- I recomend run ```yarn install``` locally, because the absence of node_modules causes errors in data types 
 
 ### Build
 ```
