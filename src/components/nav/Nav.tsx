@@ -3,12 +3,11 @@ import React, { RefObject } from "react";
 import "./styles.css";
 import logo from "./img/logo.svg";
 
-interface NavProps {
-  navRef?: RefObject<HTMLElement>
-}
-
-export function Nav({navRef}: NavProps): JSX.Element {
-
+export function Nav({
+  navRef,
+}: {
+  navRef?: RefObject<HTMLElement>;
+}): JSX.Element {
   return (
     <nav className="navigation transparent" ref={navRef}>
       <div className="navigation-logo">
@@ -17,7 +16,10 @@ export function Nav({navRef}: NavProps): JSX.Element {
         </a>
       </div>
       <div className="navigation-links">
-        <a className="navigation-link" href="https://docs.google.com/document/d/1unZEQPnvFd2LHnUx8ICC2kbTIy-uAmj9YF56kEAsPQA/edit?usp=sharing">
+        <a
+          className="navigation-link"
+          href="https://docs.google.com/document/d/1unZEQPnvFd2LHnUx8ICC2kbTIy-uAmj9YF56kEAsPQA/edit?usp=sharing"
+        >
           <div className="navigation-link-icon">
             <i className="fas fa-file-contract"></i>
           </div>

@@ -1,4 +1,4 @@
-export function intersectionObserver(
+export function navScrollChange(
   element: HTMLElement | null,
   section: HTMLElement | null,
   classToEdit: string,

@@ -1,6 +1,6 @@
 import React, { Component, RefObject } from "react";
 
-import { intersectionObserver } from "../intersection-observer";
+import { navScrollChange } from "../nav-scroll-change";
 
 import { Nav } from "../components/nav";
 import { Header } from "../components/header";
@@ -8,10 +8,12 @@ import { About } from "../components/about";
 import { Contact } from "../components/contact";
 import { Footer } from "../components/footer";
 
+import { IApp } from "./IApp";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 
-export class App extends Component {
+export class App extends Component implements IApp {
   nav: RefObject<HTMLElement>;
   header: RefObject<HTMLElement>;
 
@@ -22,7 +24,7 @@ export class App extends Component {
   }
 
   componentDidMount() {
-    intersectionObserver(this.nav.current, this.header.current, "transparent", {
+    navScrollChange(this.nav.current, this.header.current, "transparent", {
       rootMargin: "-10% 0% 0% 0%",
     });
   }
