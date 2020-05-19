@@ -8,14 +8,12 @@ import { About } from "../components/about";
 import { Contact } from "../components/contact";
 import { Footer } from "../components/footer";
 
-import { IApp } from "./IApp";
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 
-export class App extends Component implements IApp {
-  nav: RefObject<HTMLElement>;
-  header: RefObject<HTMLElement>;
+export class App extends Component {
+  private nav: RefObject<HTMLElement>;
+  private header: RefObject<HTMLElement>;
 
   constructor(props: Readonly<{}>) {
     super(props);
@@ -29,7 +27,7 @@ export class App extends Component implements IApp {
     });
   }
 
-  render(): JSX.Element {
+  render() {
     return (
       <>
         <Nav navRef={this.nav} />

@@ -2,11 +2,11 @@ import React, { RefObject } from "react";
 
 import styles from "./styles.module.css";
 
-export function Header({
-  headerRef,
-}: {
+interface HeaderProps {
   headerRef?: RefObject<HTMLElement>;
-}): JSX.Element {
+}
+
+export const Header: React.FC<HeaderProps> = ({ headerRef }) => {
   return (
     <header ref={headerRef}>
       <div className={styles["header-container"]}>

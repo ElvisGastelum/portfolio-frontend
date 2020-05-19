@@ -1,1 +1,1 @@
-export { navScrollChange } from "./nav-scroll-change";
+export { navScrollChange } from "./navScrollChange";

@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from './styles.module.css';
 
-export function Contact(): JSX.Element {
+export const Contact = () => {
   return (
     <>
     <span id="contact"></span>

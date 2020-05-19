@@ -3,11 +3,11 @@ import React, { RefObject } from "react";
 import "./styles.css";
 import logo from "./img/logo.svg";
 
-export function Nav({
-  navRef,
-}: {
+interface NavProps {
   navRef?: RefObject<HTMLElement>;
-}): JSX.Element {
+}
+
+export const Nav: React.FC<NavProps> = ({ navRef }) => {
   return (
     <nav className="navigation transparent" ref={navRef}>
       <div className="navigation-logo">
@@ -40,4 +40,4 @@ export function Nav({
       </div>
     </nav>
   );
-}
+};
