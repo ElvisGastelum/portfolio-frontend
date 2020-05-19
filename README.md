@@ -7,7 +7,7 @@
 
 ### Build
 ```
-docker build -t elvisgastelum/portfolio:typescript-dev .
+docker build -t elvisgastelum/portfolio:dev .
 ```
 
 ### Run
