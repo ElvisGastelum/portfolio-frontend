@@ -6,6 +6,7 @@ export const navScrollChange: INavScrollChange = (
   classToEdit,
   options
 ) => {
+  
   const editClass = (entry: IntersectionObserverEntry) => {
     if (element == null) return;
     if (entry.isIntersecting) element?.classList.add(classToEdit);

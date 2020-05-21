@@ -11,7 +11,9 @@ import { Footer } from "../components/footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 
-export class App extends Component {
+interface AppState { }
+
+export class App extends Component<{}, AppState> {
   private nav: RefObject<HTMLElement>;
   private header: RefObject<HTMLElement>;
 
@@ -19,9 +21,10 @@ export class App extends Component {
     super(props);
     this.nav = React.createRef();
     this.header = React.createRef();
+    
   }
 
-  componentDidMount() {
+  async componentDidMount() {
     navScrollChange(this.nav.current, this.header.current, "transparent", {
       rootMargin: "-10% 0% 0% 0%",
     });
