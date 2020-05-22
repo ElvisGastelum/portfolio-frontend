@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import ReactMarkdown from "react-markdown";
+
 import { Articles } from "../../types";
 import { getArticles } from "../../services";
 
@@ -37,6 +39,17 @@ export class Blog extends Component<{}, BlogState> {
   }
 
   render() {
-    return <div></div>;
+    const { articles } = this.state;
+    return (
+      <>
+        {articles?.length ? (
+          articles.map((article) => (
+            <ReactMarkdown key={article.id} escapeHtml={false} source={article.content} />
+          ))
+        ) : (
+          <div>Cargando</div>
+        )}
+      </>
+    );
   }
 }

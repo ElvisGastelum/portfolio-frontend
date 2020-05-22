@@ -1,6 +1,6 @@
 import React, { Component, RefObject } from "react";
 
-import { navScrollChange } from "../nav-scroll-change";
+import { navScrollChange } from "../helpers/nav-scroll-change";
 
 import { Nav } from "../components/nav";
 import { Header } from "../components/header";
