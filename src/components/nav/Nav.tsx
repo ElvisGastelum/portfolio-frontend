@@ -5,9 +5,10 @@ import logo from "./img/logo.svg";
 
 interface NavProps {
   navRef?: RefObject<HTMLElement>;
+  onSetSidebarOpen: (open: boolean) => void;
 }
 
-export const Nav: React.FC<NavProps> = ({ navRef }) => {
+export const Nav: React.FC<NavProps> = ({ navRef, onSetSidebarOpen }) => {
   return (
     <nav className="navigation transparent" ref={navRef}>
       <div className="navigation-logo">
@@ -37,6 +38,9 @@ export const Nav: React.FC<NavProps> = ({ navRef }) => {
           </div>
           <span className="navigation-link-text">Contact</span>
         </a>
+      </div>
+      <div className="navigation-bars" onClick={() => onSetSidebarOpen(true)} style={{zIndex: 1}}>
+        <i className="fas fa-bars"></i>
       </div>
     </nav>
   );

@@ -1,75 +1,146 @@
-header{
-  height: 113vh;
+header {
+  height: 65vh;
 }
 
-.header-container{
+.header-container {
   background-image: url(./img/background.jpg);
   background-color: rgb(var(--color-secondary));
-  background-position: 30%;
+  background-position-y: 0vh;
+  background-position-x: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 65vh;
   background-attachment: fixed;
   -webkit-clip-path: polygon(600% 0, 0 0, 0 98%);
-  clip-path: polygon(900% 0,0 0, 0 0, 0 100%);
+  clip-path: polygon(900% 0, 0 0, 0 0, 0 100%);
   z-index: 10;
   height: 100%;
+  text-align: center;
 }
 
-.header-text{
+.header-text {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 34vh;
-  left: 8vw;
+  position: relative;
+  top: 18vh;
 }
 
-.header-title{
+.header-title {
   font-style: bold;
   color: rgb(var(--color-secondary));
-  font-weight:bold;
+  font-weight: bold;
   letter-spacing: 0.05em;
-  font-size: 4em;
+  font-size: 2.2em;
   margin: 0;
+  line-height: 1.3;
 }
 
-.header-subtitle{
-  position: relative;
+.header-subtitle {
   color: rgb(var(--color-black));
   font-weight: 300;
-  text-align: end;
-  font-size: 3em;
+  font-size: 1.8em;
   margin: 0;
+  line-height: 1.3;
 }
 
-.buttons{
+.buttons {
   position: relative;
   justify-content: center;
   text-decoration: none;
   display: flex;
-  top: 76vh;
-
+  top: 31vh;
 }
 
-.button{
+.button {
   text-decoration: none;
-  margin: 0 1rem;
-  padding: 0.6rem 2rem;
+  margin: 0 0.5rem;
+  padding: 0.35rem 1.1rem;
   background-color: rgb(var(--color-secondary));
   color: rgb(var(--color-gray));
-  font-size: 1.7em;
+  font-size: 0.7em;
   border-radius: 60px;
   display: inline-flex;
 }
 
-.button:hover{
+.button:hover {
   text-decoration: none;
   color: rgb(var(--color-black));
 }
 
-.button *{
+.button * {
   margin: 0 0.2em;
 }
 
-.button-icon{
-  font-size: 1.5em;
+.button-icon {
+  font-size: 1.6em;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    height: 80vh;
+  }
+
+  .header-container {
+    background-size: auto 80vh;
+  }
+
+  .header-text {
+    position: absolute;
+    top: 23vh;
+    left: 8vw;
+  }
+
+  .header-title {
+    font-size: 2.3em;
+  }
+
+  .header-subtitle {
+    text-align: end;
+  }
+
+  .buttons {
+    top: 54vh;
+  }
+
+  .button {
+    margin: 0 0.5rem;
+    padding: 0.3rem 1rem;
+    font-size: 1em;
+  }
+
+  .button-icon {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    height: 113vh;
+  }
+
+  .header-container {
+    background-position: 30%;
+    background-size: cover;
+  }
+
+  .header-text {
+    top: 34vh;
+  }
+
+  .header-title {
+    font-size: 3.7em;
+  }
+
+  .header-subtitle {
+    font-size: 2.7em;
+  }
+
+  .buttons {
+    top: 70vh;
+  }
+
+  .button {
+    margin: 0 1rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.5em;
+  }
 }
