@@ -32,6 +32,7 @@ body {
   --color-black: 0, 0, 0;
   --color-blue: 91, 126, 170;
   --color-blue-dark: 0, 86, 179;
+  --navbar-height: 7vh;
 }
 
 #root{
