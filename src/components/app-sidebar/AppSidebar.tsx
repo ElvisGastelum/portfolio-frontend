@@ -11,7 +11,7 @@ export const AppSidebar = () => {
     <div style={{ width: sidebarWidth(70) }} className="sidebar-container">
       <div className="sidebar-buttons">
         <div className="sidebar-button">
-          <a href="#cv">CV</a>
+          <a href="https://docs.google.com/document/d/1unZEQPnvFd2LHnUx8ICC2kbTIy-uAmj9YF56kEAsPQA/edit?usp=sharing">CV</a>
         </div>
         <div className="sidebar-button">
         <a href="#about">
