@@ -1,18 +1,18 @@
 .about{
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
-  justify-content: space-evenly;
-  height: 50vh;
-  min-height: 300px;
+  justify-content: start;
+  height: 40vh;
 }
 
 .about-text{
-  width: 80vw;
+  width: 90vw;
   text-align: center;
 }
 
 .about-text-title{
-  font-size: 3rem;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 
@@ -23,10 +23,57 @@
 }
 
 .about-text-content{
-  font-size: 1.8rem;
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 
 .about-icon{
-  font-size: 10rem;
+  font-size: 3.5em;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .about{
+    justify-content: center;
+    height: 45vh;
+  }
+  
+  .about-text-title{
+    font-size: 2em;
+  }
+  
+  .about-text-content{
+    font-size: 1.5em;
+  }
+  
+  .about-icon{
+    font-size: 7em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .about{
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 50vh;
+    min-height: 300px;
+  }
+  
+  .about-text{
+    width: 80vw;
+  }
+  
+  .about-text-title{
+    font-size: 3rem;
+  }
+  
+  .about-text-content{
+    font-size: 1.8rem;
+  }
+  
+  
+  .about-icon{
+    font-size: 10rem;
+  }
 }

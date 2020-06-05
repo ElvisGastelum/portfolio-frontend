@@ -17,6 +17,8 @@ interface AppState {
   sidebarOpen: boolean;
 }
 
+type onSetSidebarOpenType = (open: boolean) => void;
+
 export class App extends Component<{}, AppState> {
   private nav: RefObject<HTMLElement>;
   private header: RefObject<HTMLElement>;
@@ -30,7 +32,6 @@ export class App extends Component<{}, AppState> {
 
     this.nav = React.createRef();
     this.header = React.createRef();
-    
   }
 
   async componentDidMount() {
@@ -39,7 +40,7 @@ export class App extends Component<{}, AppState> {
     });
   }
 
-  onSetSidebarOpen = (open: boolean): void => {
+  onSetSidebarOpen: onSetSidebarOpenType = (open) => {
     this.setState({ sidebarOpen: open });
   };
 
