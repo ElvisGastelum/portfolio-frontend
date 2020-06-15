@@ -1,10 +1,20 @@
 import React from "react";
-import { Articles as IArticles } from "../../types";
+import { useArticles } from "../../hooks/use-articles";
 
-interface ArticlesProps {
-  articles: IArticles;
-}
 
-export const Articles: React.FC<ArticlesProps> = ({ articles }) => {
-  return <div></div>;
+export const Articles: React.FC = () => {
+  const { articles, isLoaded } = useArticles();
+
+
+
+  return (
+    <>
+      {isLoaded
+        ? articles.map(article => {
+          return <h3 key={article.id} >{article.title}</h3>
+          })
+        : <p>Loading...</p>
+    }
+    </>
+  );
 };
