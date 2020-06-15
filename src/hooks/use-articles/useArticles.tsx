@@ -38,7 +38,7 @@ const articlesReducer: Reducer<State> = (state, action) => {
 };
 
 export const useArticles = () => {
-  const [state, dispatch] = useReducer(articlesReducer, initState);
+  const [state, dispatch] = useReducer<Reducer<State>>(articlesReducer, initState);
   const { articles, isLoaded } = state;
 
   const action = (articles: Articles) => {
