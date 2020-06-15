@@ -1,4 +1,10 @@
 import React, { Component, RefObject } from "react";
+import {
+  withRouter,
+  RouteComponentProps,
+  Route,
+  Switch,
+} from "react-router-dom";
 import Sidebar from "react-sidebar";
 
 import { navScrollChange } from "../helpers/nav-scroll-change";
@@ -12,6 +18,8 @@ import { AppSidebar, SidebarPartialStyles } from "../components/app-sidebar";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
+import { Blog } from "../pages/blog";
+import { Home } from "../pages/home";
 
 interface AppState {
   sidebarOpen: boolean;
@@ -19,11 +27,11 @@ interface AppState {
 
 type onSetSidebarOpenType = (open: boolean) => void;
 
-export class App extends Component<{}, AppState> {
+class App extends React.Component<RouteComponentProps, AppState> {
   private nav: RefObject<HTMLElement>;
   private header: RefObject<HTMLElement>;
 
-  constructor(props: Readonly<{}>) {
+  constructor(props: RouteComponentProps) {
     super(props);
 
     this.state = {
@@ -54,12 +62,27 @@ export class App extends Component<{}, AppState> {
         pullRight={true}
         overlayClassName="sidebar-container"
       >
-        <Nav navRef={this.nav} onSetSidebarOpen={this.onSetSidebarOpen} />
-        <Header headerRef={this.header} />
-        <About />
-        <Contact />
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={() => {
+              return (
+                <Home
+                  nav={this.nav}
+                  header={this.header}
+                  onSetSidebarOpen={this.onSetSidebarOpen}
+                />
+              );
+            }}
+          />
+          <Route exact path="/blog" component={Blog} />
+        </Switch>
+
         <Footer />
       </Sidebar>
     );
   }
 }
+
+export default withRouter(App);
